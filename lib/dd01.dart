@@ -3,7 +3,7 @@
 // ignore:
 //import 'package:font_awesome_flutterfont_awesome_flutter.dart';
 //--------------------------------//--------------------*/
-import ' package:flutter.dart';
+import 'package:flutter.dart';
 void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
