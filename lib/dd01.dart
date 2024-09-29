@@ -3,7 +3,7 @@
 // ignore:
 //import 'package:font_awesome_flutterfont_awesome_flutter.dart';
 //--------------------------------//--------------------*/
-import 'package:flutter.dart';
+import 'package:flutter/material.dart';
 void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             // Display the score
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(2.0),
               child: Text.rich(
                 TextSpan(
                   children: [
@@ -103,6 +103,14 @@ class _HomePageState extends State<HomePage> {
             ),
 
             // Use Flexible instead of Expanded to avoid conflicts with the scroll view
+Row(
+height:25, 
+children:[
+   Text("Match Items"), 
+   spacer(flex:3, width:40),
+   Text("Target Items"), 
+]
+)  
             Flexible(
               child: GridView.builder(
                 physics: const BouncingScrollPhysics(), // Allow scrolling
